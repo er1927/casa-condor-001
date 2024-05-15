@@ -1,6 +1,6 @@
-* {
+/* * {
     outline: dotted 1.5px blue;
-}
+} */
 
 body {
     background-color: antiquewhite;
@@ -31,6 +31,20 @@ body {
     color: #333; 
     text-decoration: none;
     margin-right: 20px; 
+}
+
+.hamburger-icon {
+    display: none;
+}
+
+@media only screen and (max-width: 768px) {
+    .header__nav {
+        display: none; 
+    }
+
+    .hamburger-icon {
+        display: block; 
+    }
 }
 
 .main {
