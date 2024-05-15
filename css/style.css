@@ -28,3 +28,42 @@ body {
     text-decoration: none;
     margin-right: 20px; 
 }
+
+.main {
+    padding: 20px;
+}
+
+
+.main__container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px; 
+}
+
+.card {
+    width: 300px; 
+    background-color: #f4f4f4; 
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.card__image {
+    height: 200px; 
+    background-image: url('path/to/your/image.jpg'); 
+    background-size: cover;
+    background-position: center;
+}
+
+.card__content {
+    padding: 20px;
+}
+
+.card__title {
+    margin-top: 0;
+}
+
+.card__description {
+    margin-bottom: 0;
+}
+
