@@ -1,6 +1,6 @@
-/* * {
+* {
     outline: dotted 1.5px blue;
-} */
+}
 
 body {
     background-color: antiquewhite;
@@ -35,6 +35,16 @@ body {
 
 .hamburger-icon {
     display: none;
+}
+
+.footer__contact {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.footer__contact__icon-kofi {
+    height: 18.45px;
 }
 
 @media only screen and (max-width: 768px) {
