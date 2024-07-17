@@ -1,9 +1,10 @@
-/* * {
+* {
     outline: dotted 1.5px blue;
-} */
+}
 
 body {
     background-color: antiquewhite;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .header {
@@ -35,6 +36,11 @@ body {
 
 .hamburger-icon {
     display: none;
+}
+
+.about {
+    padding: 20px;
+    text-align: center;
 }
 
 .footer__contact {
