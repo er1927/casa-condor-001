@@ -15,15 +15,9 @@ body {
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
-.header__nav {
-    display: flex;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
+.header__nav li {
+    display: inline;
 }
-
-
 .header__nav a {
     color: #333; 
     text-decoration: none;
