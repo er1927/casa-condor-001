@@ -165,6 +165,6 @@ body {
 
 .footer__copyright {
     margin: 0 auto; 
-    margin-top: auto;
     text-align: center;
+    font-size: .75rem;
 }
