@@ -1,7 +1,3 @@
-/* * {
-    outline: dotted 1.5px blue;
-} */
-
 body {
     background-color: antiquewhite;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -14,6 +10,7 @@ body {
     padding: 20px;
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    position: relative; /* Ensure the header is relative */
 }
 
 .header__nav li {
@@ -46,7 +43,6 @@ body {
 }
 
 @media only screen and (min-width: 769px) {
-        
     .back-to-top {
         position: fixed;
         bottom: 20px; 
@@ -61,7 +57,7 @@ body {
         position: sticky;
         top:0;
     }
-    
+
     .header__title h1 {
         font-size: 1rem;
     }
@@ -79,7 +75,25 @@ body {
         background-color: transparent;
     }
 
-        
+    .header__nav.show-nav {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        background-color: gray;
+        padding: 10px;
+        width: 150px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .header__nav a {
+        color: inherit;
+        text-decoration: none;
+        margin: 10px 0;
+        display: block;
+    }
+
     .back-to-top {
         display: none; 
     }
@@ -88,7 +102,6 @@ body {
 .main {
     padding: 20px;
 }
-
 
 .main__container {
     display: flex;
@@ -106,7 +119,6 @@ body {
 
 .card__image {
     height: 200px; 
-    /* background-image: url('');  */
     background-size: cover;
     background-position: center;
 }
@@ -143,7 +155,6 @@ body {
     text-decoration: none; 
     color: #333; 
 }
-
 
 .back-to-top__icon {
     font-size: 24px; 
