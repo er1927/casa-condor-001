@@ -36,13 +36,19 @@ function displayNav(event) {
     const items = ['Blog', 'About', 'Contact'];
 
     items.forEach(item => {
-      const div = document.createElement('div');
-      div.textContent = item;
+      // Create <a> elements for each item
+      const link = document.createElement('a');
+      link.textContent = item;
+      link.href = `#${item.toLowerCase()}`; // Set the href attribute based on item name
+      link.style.color = 'inherit'; // Inherit text color
+      link.style.textDecoration = 'none'; // Remove underline
 
-      // Style each navigation item
-      div.style.margin = '10px 0';
+      // Style each navigation link
+      link.style.margin = '10px 0';
+      link.style.display = 'block'; // Display block for full width
 
-      navColumn.appendChild(div);
+      // Append the link to navigation container
+      navColumn.appendChild(link);
     });
 
     // Append the navigation container to the body
