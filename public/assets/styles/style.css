@@ -116,6 +116,29 @@ body {
     margin-bottom: 5px;
 }
 
+
+.back-to-top {
+    position: fixed;
+    bottom: 20px; 
+    right: 20px; 
+    z-index: 1000; 
+    display: block; 
+}
+
+
+.back-to-top__link {
+    display: block; 
+    text-decoration: none; 
+    color: #333; 
+}
+
+
+.back-to-top__icon {
+    font-size: 24px; 
+    display: block; 
+    text-align: center; 
+}
+
 .footer__copyright {
     margin: 0 auto; 
     margin-top: auto;
