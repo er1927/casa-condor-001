@@ -49,7 +49,12 @@ body {
     }
 
     .hamburger-icon {
-        display: block; 
+        display: inline-block; 
+        border: 1px solid #fff; 
+        text-align: center; 
+        outline: none; 
+        text-decoration: none; 
+        background-color: transparent;
     }
 }
 
