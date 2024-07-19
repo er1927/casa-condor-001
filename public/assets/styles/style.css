@@ -1,6 +1,6 @@
-/* * {
+* {
     outline: 1px dotted purple;
-} */
+}
 body {
     background-color: antiquewhite;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -13,7 +13,45 @@ body {
     padding: 20px;
     background-color: #fff;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-    position: relative; /* Ensure the header is relative */
+    position: sticky;
+    top:0;
+}
+.header__nav {
+    display: none; 
+}
+.hamburger-icon {
+    display: inline-block; 
+    border: 1px solid #fff; 
+    text-align: center; 
+    outline: none; 
+    text-decoration: none; 
+    background-color: transparent;
+}
+.header__nav.show-nav {
+    display: flex;
+     flex-direction: column; 
+     position: absolute; 
+    top: 100%;
+    right: 0;
+    background-color: #fff;
+    width: max-content;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: right;
+    padding-right: 1.75rem;
+}
+.header__nav a {
+    color: inherit;
+    text-decoration: none;
+    margin: 10px 0;
+    display: block;
+}
+
+.back-to-top {
+    display: none; 
+}
+
+.header__title h1 {
+    font-size: 1rem;
 }
 
 .header__nav li {
@@ -30,9 +68,9 @@ body {
     width:54px;
 }
 
-.hamburger-icon {
+/* .hamburger-icon {
     display: none;
-}
+} */
 
 .about {
     padding: 20px;
@@ -50,11 +88,24 @@ body {
     height: 18.45px;
 }
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 525px) {
+    .header {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .header__nav{
+        display:flex; 
+        justify-content: space-between;
+        align-items: center;
+    }
     .header__nav__search-icon {
         text-align: center;
     }
-
+    .hamburger-icon {
+        display: none; 
+    }
     .back-to-top {
         position: fixed;
         bottom: 20px; 
@@ -64,7 +115,7 @@ body {
     }
 }
 
-@media only screen and (max-width: 768px) {
+/* @media only screen and (max-width: 768px) {
     .header {
         position: sticky;
         top:0;
@@ -110,7 +161,7 @@ body {
     .back-to-top {
         display: none; 
     }
-}
+} */
 
 .main {
     padding: 20px;
