@@ -1,6 +1,6 @@
-* {
+/* * {
     outline: 1px dotted purple;
-}
+} */
 body {
     background-color: antiquewhite;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -25,10 +25,9 @@ body {
     text-decoration: none;
     margin-right: 20px; 
 }
-
 .header__nav__search-icon {
-    height: 18.69px;
-    width:54.73px;
+    height: 16.69px;
+    width:54px;
 }
 
 .hamburger-icon {
