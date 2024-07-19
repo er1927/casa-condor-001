@@ -1,6 +1,6 @@
-/* * {
+* {
     outline: 1px dotted purple;
-} */
+}
 body {
     background-color: antiquewhite;
     font-family: Georgia, 'Times New Roman', Times, serif;
@@ -26,6 +26,11 @@ body {
     margin-right: 20px; 
 }
 
+.header__nav__search-icon {
+    height: 18.69px;
+    width:54.73px;
+}
+
 .hamburger-icon {
     display: none;
 }
@@ -47,6 +52,10 @@ body {
 }
 
 @media only screen and (min-width: 769px) {
+    .header__nav__search-icon {
+        text-align: center;
+    }
+
     .back-to-top {
         position: fixed;
         bottom: 20px; 
