@@ -20,12 +20,28 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
-// Dark to light mode toggle button
+
 const toggleButton = document.getElementById('toggle-theme');
+const sunIcon = document.getElementById('sun-icon');
+const moonIcon = document.getElementById('moon-icon');
+
 toggleButton.addEventListener('click', () => {
     if (document.documentElement.getAttribute('data-theme') === 'dark') {
         document.documentElement.setAttribute('data-theme', 'light');
+        sunIcon.style.display = 'none';
+        moonIcon.style.display = 'inline';
     } else {
         document.documentElement.setAttribute('data-theme', 'dark');
+        sunIcon.style.display = 'inline';
+        moonIcon.style.display = 'none';
     }
 });
+
+// Initialize the correct icon based on the initial theme
+if (document.documentElement.getAttribute('data-theme') === 'dark') {
+    sunIcon.style.display = 'inline';
+    moonIcon.style.display = 'none';
+} else {
+    sunIcon.style.display = 'none';
+    moonIcon.style.display = 'inline';
+}
