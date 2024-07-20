@@ -19,3 +19,13 @@ document.addEventListener('DOMContentLoaded', () => {
     event.stopPropagation();
   });
 });
+
+// Dark to light mode toggle button
+const toggleButton = document.getElementById('toggle-theme');
+toggleButton.addEventListener('click', () => {
+    if (document.documentElement.getAttribute('data-theme') === 'dark') {
+        document.documentElement.setAttribute('data-theme', 'light');
+    } else {
+        document.documentElement.setAttribute('data-theme', 'dark');
+    }
+});
