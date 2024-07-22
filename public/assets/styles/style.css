@@ -8,7 +8,7 @@
     --secondary-color: #7a1e47;
     --text-color: #2b0000; /*dark red*/
     --accent-color-1: #d2d2d2;
-    --accent-color-2: #566427;
+    --accent-color-2: #e4e2e2;
     --accent-color-3: #351930;
     --button-bg-color: #d2d2d2;
     --button-text-color: #ffffff;
@@ -20,7 +20,7 @@
     --secondary-color: #9b264e;
     --text-color: #f5f5f5;
     --accent-color-1: #a18c72;
-    --accent-color-2: #6b8e3e;
+    --accent-color-2: #353535;
     --accent-color-3: #4c1f32;
     --button-bg-color: #9cc74a;
     --button-text-color: #121212;
@@ -123,10 +123,12 @@ a {
     gap: 10px;
     align-items: center;
     justify-content: center;
+    margin-bottom: 20px;
 }
 
 .footer__contact__icon-kofi {
     height: 18.45px;
+    color:var(--text-color);
 }
 
 @media only screen and (min-width: 525px) {
@@ -157,6 +159,9 @@ a {
         z-index: 1000; 
         display: block; 
     }
+    .fa-classic, .fa-regular, .fa-solid, .far, .fas {
+        color:var(--text-color);
+    }
 }
 
 .main {
@@ -173,10 +178,10 @@ a {
 
 .card {
     width: 300px; 
-    background-color: #f4f4f4; 
+    background-color: var(--accent-color-2); 
     border-radius: 5px;
     overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    box-shadow: 0 4px 8px var(--accent-color-2); 
 }
 
 .card__image {
@@ -201,12 +206,8 @@ a {
     display: flex;
     flex-direction: column;
     padding: 20px;
-    background-color: var(--accent-color-1);
+    background-color: var(--primary-color);
     color: var(--text-color);
-}
-
-.footer__contact {
-    margin-bottom: 20px;
 }
 
 .footer__contact h3 {
