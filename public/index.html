@@ -29,9 +29,9 @@
         <nav class="header__nav">
             <ul>
                 <li><i class="fa-solid fa-magnifying-glass header__nav__search-icon"></i></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#blog">blog</a></li>
+                <li><a href="#about">about</a></li>
+                <li><a href="#contact">contact</a></li>
             </ul>
         </nav>
     </header>    
@@ -40,46 +40,24 @@
         <span id="moon-icon" class="icon">&#x263E;</span>
     </button>
     <main class="main" id="blog">
-        <div class="main__container">
-            <article class="card">
-                <div class="card__image"></div>
-                <div class="card__content">
-                    <h3 class="card__title">Casa Condor: First impressions of Earth</h3>
-                    <p class="card__description">Getting acquainted, overcoming plant blindness and discovering there's no such thing as a blank canvas.</p>
-                </div>
-            </article>
-            <!-- <article class="card">
-                <div class="card__image"></div>
-                <div class="card__content">
-                    <h3 class="card__title">Title</h3>
-                    <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-            </article>
-            <article class="card">
-                <div class="card__image"></div>
-                <div class="card__content">
-                    <h3 class="card__title">Title</h3>
-                    <p class="card__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-                </div>
-            </article> -->
-            <article class="card">
-                <div class="card__image"></div>
-                <div class="card__content">
-                    <h3 class="card__title">About</h3>
-                    <p class="card__description">The who, what and why of all this.</p>
-                </div>
-            </article>
-        </div>
-        <div class="about" id="about">
-            <p>Restoring a native ecosystem at the end of the world in the hopes of inspiring your own work.
-                <br><a>Learn more</a></p>
-        </div>
-
+        <section id="blog-cards" class="blog__cards"></section>
+        <section id="blog-entry" class="blog__entry" style="display: none;">
+            <button id="back-button" class="blog__entry__back-button">Back to Blog</button>
+            <h1 class="blog__entry__title" id="entry-title"></h1>
+            <h2 class="blog__entry__subtitle" id="entry-subtitle"></h2>
+            <img class="blog__entry__image" id="entry-image" alt="Blog Image">
+            <p class="blog__entry__content" id="entry-content"></p>
+            <p class="blog__entry__tags" id="entry-tags"></p>
+            <p class="blog__entry__author" id="entry-author"></p>
+        </section>
     </main>
+    <div class="about" id="about">
+        <p>Restoring a native ecosystem at the end of the world in the hopes of inspiring your own work.
+            <br><a>Learn more</a></p>
+    </div>
     <footer class="footer" id="contact">
         <div class="footer__contact">
             <!-- <h3>Contact</h3> -->
-         
         </div>
         <div class="footer__copyright">
             <p>2024</p>

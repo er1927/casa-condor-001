@@ -1,0 +1,21 @@
+[
+    {
+      "id": 1,
+      "title": "Casa Condor: First impressions of Earth",
+      "subtitle": "Getting acquainted, overcoming plant blindness and discovering there's no such thing as a blank canvas.",
+      "image": "/public/assets/images/blog1.jpg",
+      "content": "This is the content of the first blog entry. It can be long and detailed.",
+      "tags": ["introduction", "journey"],
+      "author": "Author Name"
+    },
+    {
+      "id": 2,
+      "title": "Second Blog Entry",
+      "subtitle": "Deep dive into the topic",
+      "image": "/public/assets/images/blog2.jpg",
+      "content": "This is the content of the second blog entry. More details and information here.",
+      "tags": ["topic", "deep dive"],
+      "author": "Author Name"
+    }
+  ]
+  
