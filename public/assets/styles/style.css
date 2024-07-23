@@ -37,6 +37,10 @@ a {
     color: var(--primary-color);
 }
 
+.header__logo {
+    width: 70px;
+}
+
 .header__toggle-button {
     background-color: var(--background-color);
     color: var(--text-color);
