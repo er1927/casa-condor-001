@@ -9,9 +9,9 @@
     --text-color: #2b0000; /*dark red*/
     --accent-color-1: #AA2E00;
     --accent-color-2: #d2d2d2;
-    --accent-color-3: #351930;
+    /* --accent-color-3: #351930;
     --button-bg-color: #d2d2d2;
-    --button-text-color: #ffffff;
+    --button-text-color: #ffffff; */
 }
 
 [data-theme="dark"] {
@@ -20,10 +20,10 @@
     --secondary-color: #353535;
     --text-color: #f5f5f5;
     --accent-color-1: #FF8C00;
-    --accent-color-2: #a18c72;
+    /* --accent-color-2: #a18c72;
     --accent-color-3: #4c1f32;
     --button-bg-color: #9cc74a;
-    --button-text-color: #121212;
+    --button-text-color: #121212; */
 }
 
 
@@ -58,7 +58,6 @@ a {
     align-items: center;
     padding: 20px;
     background-color: var(--primary-color);
-    color: var(--button-text-color);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     position: sticky;
     top:0;
@@ -120,6 +119,10 @@ a {
     color:var(--accent-color-1)
 }
 
+.icon {
+    color:var(--accent-color-1);
+}
+
 .about {
     padding: 20px;
     text-align: center;
@@ -131,11 +134,6 @@ a {
     align-items: center;
     justify-content: center;
     margin-bottom: 20px;
-}
-
-.footer__contact__icon-kofi {
-    height: 18.45px;
-    color:var(--text-color);
 }
 
 .main {
