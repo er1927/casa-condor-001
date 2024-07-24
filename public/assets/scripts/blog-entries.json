@@ -1,14 +1,14 @@
 [
-    {
+  {
       "id": 1,
       "title": "Casa Condor: First impressions of Earth",
       "subtitle": "Getting acquainted, overcoming plant blindness and discovering there's no such thing as a blank canvas.",
       "image": "/public/assets/images/blog1.jpg",
-      "content": "This is the content of the first blog entry. It can be long and detailed.",
+      "content": "This is the content of the first blog entry. It can be long and detailed.\nHTML 5 states that the element may be wrapped around entire paragraphs, lists, tables, and so forth, even entire sections, so long as there is no interactive content within (e.g. buttons or other links).\nHTML 4.01 specifies that <a> elements may only contain inline elements. A <div> is a block element, so it may not appear inside an <a>. Of course you are at liberty to style an inline element such that it appears to be a block, or indeed style a block so that it is rendered inline. The use of the terms inline and block in HTML refers to the relationship of the elements to the semantic structure of the document, whereas the same terms in CSS are related more to the visual styling of the elements.\nIf you make inline elements display in a blocky manner, that's fine. However you",
       "tags": ["introduction", "journey"],
       "author": "Author Name"
-    },
-    {
+  },
+  {
       "id": 2,
       "title": "Second Blog Entry Second Blog Entry Second Blog Entry Second Blog EntrySecond Blog Entry",
       "subtitle": "Deep dive into the topic",
@@ -16,6 +16,5 @@
       "content": "This is the content of the second blog entry. More details and information here.",
       "tags": ["topic", "deep dive"],
       "author": "Author Name"
-    }
-  ]
-  
+  }
+]
