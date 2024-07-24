@@ -58,7 +58,6 @@ a {
 .header.small {
     height: var(--header-small-height);
     background-color: var(--primary-color);
-    /* font-size: .75rem; */
 }
 
 .header__logo {
@@ -83,7 +82,7 @@ a {
 
 .header__logo-and-title {
     display: flex;
-    gap: 1rem;
+    gap: .25rem;
     align-items: center;
 }
 
@@ -139,8 +138,8 @@ a {
     font-size: 1.5rem;
     transition: font-size var(--transition-duration);
 }
-.header.small .header__title {
-    font-size: .5rem;
+.header.small .header__title h1 {
+    font-size: 1rem;
 }
 /* Main Content */
 .main {
