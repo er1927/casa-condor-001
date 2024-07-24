@@ -1,13 +1,11 @@
 document.addEventListener('DOMContentLoaded', () => {
-  // Debugging line
-  // console.log('test'); 
-
   const hamburgerIcon = document.querySelector('.hamburger-icon');
   const navMenu = document.querySelector('.header__nav');
   const toggleButton = document.getElementById('toggle-theme');
   const sunIcon = document.getElementById('sun-icon');
   const moonIcon = document.getElementById('moon-icon');
   const themeImage = document.getElementById('theme-image');
+  const header = document.querySelector('.header');
 
   const blogCardsContainer = document.getElementById('blog-cards');
   const blogEntrySection = document.getElementById('blog-entry');
@@ -100,5 +98,14 @@ document.addEventListener('DOMContentLoaded', () => {
   backButton.addEventListener('click', () => {
     blogEntrySection.style.display = 'none';
     blogCardsContainer.style.display = 'flex';
+  });
+
+  // Handle scroll event to toggle .small class on header
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 50) {
+      header.classList.add('small');
+    } else {
+      header.classList.remove('small');
+    }
   });
 });
