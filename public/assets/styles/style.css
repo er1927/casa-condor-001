@@ -27,6 +27,10 @@ body {
     background-color: var(--background-color);
     color: var(--text-color);
     font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 0;
+    padding: 0;
+    width:100%;
+    overflow-x:hidden;
 }
 
 a {
@@ -127,9 +131,10 @@ a {
 
 /* About Section */
 .about {
-    padding: 20px;
+    padding: 10px 40px;
+    margin: 0 -10px;
     text-align: center;
-    background-color: var(--secondary-color);
+    line-height: 1.5;
 }
 
 /* Blog Styles */
