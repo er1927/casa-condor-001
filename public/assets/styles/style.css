@@ -39,6 +39,7 @@ a {
     color: var(--accent-color-1);
     font-weight: bold;
     font-variant: small-caps;
+    text-decoration: none;
 }
 
 /* Header Styles */
@@ -78,6 +79,7 @@ a {
     padding: auto 10px;
     cursor: pointer;
     position: fixed;
+    font-size: 1.5rem;
 }
 
 .header__logo-and-title {
@@ -144,12 +146,14 @@ a {
 /* Main Content */
 .main {
     padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* About Section */
 .about {
     padding: 10px 40px;
-    margin: 0 -10px;
     text-align: center;
     line-height: 1.5;
 }
@@ -176,6 +180,12 @@ a {
     box-shadow: 0 4px 8px var(--accent-color-2);
 }
 
+.blog__entry {
+    width: 70%;
+    background-color: var(--secondary-color);
+    padding: 2rem;
+}
+
 .blog__entry__image {
     height: 200px;
     background-size: cover;
@@ -192,6 +202,15 @@ a {
 
 .blog__entry__subtitle {
     margin-bottom: 0;
+}
+
+.blog__entry__back-button {
+    border: none;
+    background-color: var(--secondary-color);
+    font-size: 2rem;
+    margin: 10px auto;
+    padding: 5px;
+    color:var(--accent-color-1)
 }
 
 /* Footer Styles */
@@ -244,5 +263,10 @@ a {
 
     .hamburger-icon {
         display: none;
+    }
+
+    .blog__entry {
+        width: 40%;
+        background-color: var(--secondary-color);
     }
 }
