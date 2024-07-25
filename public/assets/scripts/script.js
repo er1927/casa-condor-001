@@ -108,4 +108,29 @@ document.addEventListener('DOMContentLoaded', () => {
       header.classList.remove('small');
     }
   });
+
+  // Handle contact form submission
+  document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+
+    fetch('/submit', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ email: email, message: message }),
+    })
+    .then(response => response.json())
+    .then(data => {
+      console.log('Success:', data);
+      alert('Message sent successfully');
+    })
+    .catch((error) => {
+      console.error('Error:', error);
+      alert('Error sending message');
+    });
+  }); 
 });
