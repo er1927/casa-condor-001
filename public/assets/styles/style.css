@@ -47,7 +47,7 @@ a {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    padding: 20px 40px;
     background-color: var(--primary-color);
     box-shadow: 0 2px 4px var(--accent-color-2);
     position: sticky;
@@ -113,7 +113,8 @@ a {
 
 .header__nav li {
     display: inline;
-    letter-spacing: .3rem;
+    letter-spacing: 1px;
+    word-spacing: 5px;
     line-height: 1.5;
 }
 
@@ -267,7 +268,7 @@ a {
 }
 
 /* Media Queries */
-@media only screen and (min-width: 525px) {
+@media only screen and (min-width: 768px) {
     .header__title h1 {
         font-size: 2rem;
     }
