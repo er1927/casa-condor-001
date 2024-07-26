@@ -167,15 +167,19 @@ a {
 
 /* About Section */
 .about {
-    padding: 10px 40px;
-    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.about__text {
+    width:60%;
     line-height: 1.5;
 }
-.about a {
-    font-variant: normal;
-    font-weight: 400;
-    letter-spacing: 1px;
+
+.about__img img {
+    max-width: 50px;
 }
+
 /* Blog Styles */
 .blog__cards {
     display: flex;
@@ -257,14 +261,6 @@ a {
 /* Icon Styles */
 .icon {
     color: var(--accent-color-1);
-}
-
-/* ABOUT PAGE */
-.about {
-    flex-direction: column;
-    width:70%;
-    outline: solid 2px orangered;
-    line-height: 1.5;
 }
 
 /* Media Queries */
