@@ -1,7 +1,7 @@
 /* Debugging Outline */
-* {
+/* * {
     outline: 2px dotted rgb(255, 98, 255);
-}
+} */
 
 /* Theme Variables */
 :root {
@@ -235,27 +235,21 @@ a {
 .footer {
     display: flex;
     flex-direction: column;
-    padding: 20px;
+    align-items: center;
+    padding: 20px 30px;
     background-color: var(--primary-color);
     color: var(--text-color);
 }
 
 .footer__contact {
     display: flex;
-    gap: 10px;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 20px;
+    flex-direction: column;
+    width:max-content;
+    margin: 0px 20px;
 }
 
-.footer__contact h3 {
-    margin-bottom: 5px;
-}
-
-.footer__copyright {
-    margin: 0 auto;
-    text-align: center;
-    font-size: .75rem;
+.footer__contact img {
+    width:17px;
 }
 
 /* Icon Styles */
@@ -286,5 +280,13 @@ a {
     .blog__entry {
         width: 40%;
         background-color: var(--secondary-color);
+    }
+
+    .footer {
+        align-items: flex-start;
+    }
+
+    .footer__contact {
+        margin: 0px 61px;
     }
 }
