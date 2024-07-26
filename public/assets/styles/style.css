@@ -1,7 +1,7 @@
 /* Debugging Outline */
-/* * {
+* {
     outline: 2px dotted rgb(255, 98, 255);
-} */
+}
 
 /* Theme Variables */
 :root {
@@ -143,6 +143,19 @@ a {
 .header.small .header__title h1 {
     font-size: 1rem;
 }
+.header__tagline {
+    margin: 2.5rem;
+    text-align: center;
+    line-height: 1.5;
+    font-weight: normal;
+}
+.header__tagline a {
+    text-decoration: none;
+    font-variant: normal;
+    line-height: 1.5;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
 /* Main Content */
 .main {
     padding: 20px;
@@ -243,6 +256,14 @@ a {
 /* Icon Styles */
 .icon {
     color: var(--accent-color-1);
+}
+
+/* ABOUT PAGE */
+.about {
+    flex-direction: column;
+    width:70%;
+    outline: solid 2px orangered;
+    line-height: 1.5;
 }
 
 /* Media Queries */
