@@ -166,11 +166,17 @@ a {
 }
 
 /* About Section */
+.about__container {
+    margin: 30px auto;
+}
+
 .about {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    padding: 50px auto; 
 }
+
 .about__text {
     width:60%;
     line-height: 1.5;
@@ -246,6 +252,7 @@ a {
     flex-direction: column;
     width:max-content;
     margin: 0px 20px;
+    letter-spacing: 1px;
 }
 
 .footer__contact img {
