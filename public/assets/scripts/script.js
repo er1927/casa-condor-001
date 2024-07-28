@@ -132,5 +132,33 @@ document.addEventListener('DOMContentLoaded', () => {
       console.error('Error:', error);
       alert('Error sending message');
     });
-  }); 
+  });
+
+  // Handle comment form submission
+  document.getElementById('commentForm').addEventListener('submit', function(event) {
+    event.preventDefault();
+
+    const name = document.getElementById('commentName').value;
+    const email = document.getElementById('commentEmail').value;
+    const message = document.getElementById('commentMessage').value;
+    const submitButton = document.getElementById('commentSubmitButton');
+
+    fetch('/submit-comment', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify({ name: name, email: email, message: message }),
+    })
+    .then(response => response.json())
+    .then(data => {
+      console.log('Success:', data);
+      submitButton.textContent = 'Sent!';
+      submitButton.disabled = true;
+    })
+    .catch((error) => {
+      console.error('Error:', error);
+      alert('Error sending comment');
+    });
+  });
 });
