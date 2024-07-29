@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Function to update image and icons based on theme
   function updateTheme() {
     const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
-    themeImage.src = isDark ? '/public/assets/images/DM_logo-img.png' : '/public/assets/images/LM_logo-img.png';
+    themeImage.src = isDark ? './assets/images/DM_logo-img.png' : './assets/images/LM_logo-img.png';
     sunIcon.style.display = isDark ? 'inline' : 'none';
     moonIcon.style.display = isDark ? 'none' : 'inline';
     // Debugging line
@@ -54,7 +54,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // Initialize the correct icon and image based on the initial theme
   updateTheme();
 
-  fetch('/public/assets/scripts/blog-entries.json')
+  fetch('./assets/scripts/blog-entries.json')
     .then(response => response.json())
     .then(entries => {
       entries.forEach(entry => {
