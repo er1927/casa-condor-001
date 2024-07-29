@@ -110,55 +110,55 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 
   // Handle contact form submission
-  document.getElementById('contactForm').addEventListener('submit', function(event) {
-    event.preventDefault();
+  // document.getElementById('contactForm').addEventListener('submit', function(event) {
+  //   event.preventDefault();
 
-    const email = document.getElementById('email').value;
-    const message = document.getElementById('message').value;
+  //   const email = document.getElementById('email').value;
+  //   const message = document.getElementById('message').value;
 
-    fetch('/submit', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({ email: email, message: message }),
-    })
-    .then(response => response.json())
-    .then(data => {
-      console.log('Success:', data);
-      alert('Message sent successfully');
-    })
-    .catch((error) => {
-      console.error('Error:', error);
-      alert('Error sending message');
-    });
-  });
+  //   fetch('/submit', {
+  //     method: 'POST',
+  //     headers: {
+  //       'Content-Type': 'application/json',
+  //     },
+  //     body: JSON.stringify({ email: email, message: message }),
+  //   })
+  //   .then(response => response.json())
+  //   .then(data => {
+  //     console.log('Success:', data);
+  //     alert('Message sent successfully');
+  //   })
+  //   .catch((error) => {
+  //     console.error('Error:', error);
+  //     alert('Error sending message');
+  //   });
+  // });
 
   // Handle comment form submission
-  document.getElementById('commentForm').addEventListener('submit', function(event) {
-    event.preventDefault();
+  // document.getElementById('commentForm').addEventListener('submit', function(event) {
+  //   event.preventDefault();
 
-    const name = document.getElementById('commentName').value;
-    const email = document.getElementById('commentEmail').value;
-    const message = document.getElementById('commentMessage').value;
-    const submitButton = document.getElementById('commentSubmitButton');
+  //   const name = document.getElementById('commentName').value;
+  //   const email = document.getElementById('commentEmail').value;
+  //   const message = document.getElementById('commentMessage').value;
+  //   const submitButton = document.getElementById('commentSubmitButton');
 
-    fetch('/submit-comment', {
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-      },
-      body: JSON.stringify({ name: name, email: email, message: message }),
-    })
-    .then(response => response.json())
-    .then(data => {
-      console.log('Success:', data);
-      submitButton.textContent = 'Sent!';
-      submitButton.disabled = true;
-    })
-    .catch((error) => {
-      console.error('Error:', error);
-      alert('Error sending comment');
-    });
-  });
+  //   fetch('/submit-comment', {
+  //     method: 'POST',
+  //     headers: {
+  //       'Content-Type': 'application/json',
+  //     },
+  //     body: JSON.stringify({ name: name, email: email, message: message }),
+  //   })
+  //   .then(response => response.json())
+  //   .then(data => {
+  //     console.log('Success:', data);
+  //     submitButton.textContent = 'Sent!';
+  //     submitButton.disabled = true;
+  //   })
+  //   .catch((error) => {
+  //     console.error('Error:', error);
+  //     alert('Error sending comment');
+  //   });
+  // });
 });
