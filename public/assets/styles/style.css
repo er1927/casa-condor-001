@@ -351,8 +351,6 @@ h3.blog__card__subtitle {
 
     /* About styles */
 
-    /* About Section */
-
     .about__container {
         display: block;
         margin: 30px auto;
@@ -386,8 +384,7 @@ h3.blog__card__subtitle {
         margin: 0px 61px;
     }
 
-    .footer__nav {
+    .footer__nav__button_hide {
         display: none;
     }
-
 }
