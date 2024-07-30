@@ -199,7 +199,6 @@ p {
     flex-direction: column;
     justify-content: space-evenly;
     align-items: center;
-    padding: 50px; 
 }
 
 .about__text {
@@ -226,6 +225,7 @@ p {
     border-radius: 5px;
     overflow: hidden;
     box-shadow: 0 4px 8px var(--accent-color-2);
+    padding: 30px;
 }
 
 h2.blog__card__title {
