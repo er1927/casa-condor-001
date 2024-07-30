@@ -1,7 +1,7 @@
 /* Debugging Outline */
-/* * {
+* {
     outline: 2px dotted rgb(255, 98, 255);
-} */
+}
 
 /* Theme Variables */
 :root {
@@ -242,6 +242,10 @@ h3.blog__card__subtitle {
     line-height: var(--line-height-body);
 }
 
+.footer__contact p {
+    letter-spacing: 1px;
+}
+
 .footer__contact img {
     width:14px;
 }
@@ -265,7 +269,13 @@ h3.blog__card__subtitle {
     font-size: var(--font-size-title);
     color:var(--accent-color-1);
 }
+.copyright {
+    align-self:center;
+}
 
+.copyright img {
+    width:14px;
+}
 /* Icon Styles */
 .icon {
     color: var(--accent-color-1);
