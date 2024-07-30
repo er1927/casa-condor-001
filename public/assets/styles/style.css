@@ -12,7 +12,7 @@
     --accent-color-1: #AA2E00;
     --accent-color-2:#b9b9b9;
     --header-small-height: 40px;
-    --transition-duration: 0.2s;
+    /* --transition-duration: 0.2s; */
     --font-size-title: 32px;
     --line-height-title: 42px;
     --font-size-subtitle: 22px;
@@ -68,7 +68,7 @@ p {
     position: sticky;
     top: 0;
     color: var(--text-color);
-    transition: height var(--transition-duration), background-color var(--transition-duration);
+    /* transition: height var(--transition-duration), background-color var(--transition-duration); */
 }
 
 .header.small {
@@ -78,7 +78,7 @@ p {
 
 .header__logo {
     width: 70px;
-    transition: height var(--transition-duration); 
+    /* transition: height var(--transition-duration);  */
 }
 
 .header.small .header__logo {
@@ -157,7 +157,7 @@ p {
 .header__title h1 {
     font-size: var(--font-size-title);
     line-height: var(--line-height-title);
-    transition: font-size var(--transition-duration);
+    /* transition: font-size var(--transition-duration); */
 }
 
 .header.small .header__title h1 {
