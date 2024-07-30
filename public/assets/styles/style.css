@@ -13,6 +13,14 @@
     --accent-color-2:#b9b9b9;
     --header-small-height: 40px;
     --transition-duration: 0.2s;
+    --font-size-title: 32px;
+    --line-height-title: 42px;
+    --font-size-subtitle: 22px;
+    --line-height-subtitle: 34px;
+    --font-size-body: 18px;
+    --line-height-body: 32px;
+    --font-size-small: 14px;
+    --line-height-small: 30px;
 }
 
 [data-theme="dark"] {
@@ -40,6 +48,13 @@ a {
     font-weight: bold;
     font-variant: small-caps;
     text-decoration: none;
+    font-size: var(--font-size-body);
+    line-height: var(--line-height-body);
+}
+
+p {
+    font-size: var(--font-size-body);
+    line-height: var(--line-height-body);
 }
 
 /* Header Styles */
@@ -123,10 +138,12 @@ a {
     padding: .25rem;
     align-self: center;
     color: var(--accent-color-1);
+    font-size: var(--font-size-body);
+    line-height: var(--line-height-body);
 }
 
 .hamburger-icon {
-    font-size: 1.5rem;
+    font-size: var(--font-size-title);
     font-weight: bold;
     display: inline-block;
     border: none;
@@ -138,7 +155,8 @@ a {
 }
 
 .header__title h1 {
-    font-size: 1.5rem;
+    font-size: var(--font-size-title);
+    line-height: var(--line-height-title);
     transition: font-size var(--transition-duration);
 }
 
@@ -151,6 +169,8 @@ a {
     text-align: center;
     line-height: 1.5;
     font-weight: normal;
+    font-size: var(--font-size-subtitle);
+    line-height: var(--line-height-subtitle);
 }
 
 .header__tagline a {
@@ -184,7 +204,6 @@ a {
 
 .about__text {
     width:60%;
-    line-height: 1.5;
 }
 
 .about__img img {
@@ -209,6 +228,16 @@ a {
     box-shadow: 0 4px 8px var(--accent-color-2);
 }
 
+h2.blog__card__title {
+    font-size: var(--font-size-title);
+    line-height: var(--line-height-title);
+}
+
+h3.blog__card__subtitle {
+    font-size: var(--font-size-subtitle);
+    line-height: var(--line-height-subtitle);
+}
+
 .blog__entry {
     width: 70%;
     background-color: var(--secondary-color);
@@ -223,14 +252,20 @@ a {
 
 .blog__entry__content {
     padding: 20px;
+    font-size: var(--font-size-body);
+    line-height: var(--line-height-body);
 }
 
 .blog__entry__title {
     margin-top: 0;
+    font-size: var(--font-size-title);
+    line-height: var(--line-height-title);
 }
 
 .blog__entry__subtitle {
     margin-bottom: 0;
+    font-size: var(--font-size-subtitle);
+    line-height: var(--line-height-subtitle);
 }
 
 .blog__entry__back-button {
@@ -258,22 +293,25 @@ a {
     width:max-content;
     margin: 0px 20px;
     letter-spacing: 1px;
+    font-size: var(--font-size-body);
+    line-height: var(--line-height-body);
 }
 
 .footer__contact img {
-    width:17px;
+    width:14px;
 }
 
 /* Icon Styles */
 .icon {
     color: var(--accent-color-1);
+    font-size: var(--font-size-title);
 }
 
 /* Media Queries */
 @media only screen and (min-width: 768px) {
-    .header__title h1 {
+    /* .header__title h1 {
         font-size: 2rem;
-    }
+    } */
 
     .header__nav {
         display: flex;
@@ -282,7 +320,7 @@ a {
     .header__nav ul {
         display: flex;
         align-items: center;
-        font-size: 1rem;
+        /* font-size: 1rem; */
     }
 
     .hamburger-icon {

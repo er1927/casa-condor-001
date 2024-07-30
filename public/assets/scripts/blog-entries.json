@@ -10,8 +10,8 @@
   },
   {
       "id": 2,
-      "title": "Second Blog Entry Second Blog Entry Second Blog Entry Second Blog EntrySecond Blog Entry",
-      "subtitle": "Deep dive into the topic",
+      "title": "This is the second blog entry, which is still a working title.",
+      "subtitle": "Deep dive into the topic of how lorem ipsum is actually quite misleading as a functioning placeholder text.",
       "image": "/public/assets/images/blog2.jpg",
       "content": "This is the content of the second blog entry. More details and information here.",
       "tags": ["topic", "deep dive"],
