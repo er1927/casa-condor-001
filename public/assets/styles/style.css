@@ -89,7 +89,7 @@ p {
 
 
 .header.small .header__logo {
-    height: calc(var(--header-small-height) - 5px);
+    height: calc(var(--header-small-height) - 25px);
     width:fit-content; 
 }
 
