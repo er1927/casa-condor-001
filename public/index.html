@@ -30,7 +30,6 @@
         </button>
         <nav class="header__nav">
             <ul>
-                <li><i class="fa-solid fa-magnifying-glass header__nav__search-icon"></i></li>
                 <li><a href="index.html">home</a></li>
                 <li><a href="#blog">blog</a></li>
                 <li><a href="#about">about</a></li>
@@ -83,8 +82,9 @@
         <button class="footer__nav__button_hide">
             <a href="index.html"><i class="fa-solid fa-house"></i></a>
         </button>
-        <button class="footer__nav__button_hide">
-            <i class="fa-solid fa-magnifying-glass"></i>
+        <button id="search-icon">
+            <i class="fa-solid fa-magnifying-glass"></i><input type="text" id="search-bar" class="search-bar" placeholder="Search..." style="display: none;">
+            <button id="search-button" class="search-button" style="display: none;">Search</button>
         </button>
         <button class="footer__nav__button_hide">
             <a href="#contact"><i class="fa-solid fa-envelope"></i></a> 
