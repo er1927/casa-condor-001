@@ -288,10 +288,10 @@ h3.blog__card__subtitle {
     display: none; 
 }
 
-.footer__nav__button_hide {
+/* .footer__nav__button_hide {
     display: inline-flex;
     align-items: center;
-}
+} */
 
 .footer__contact__social {
     display: flex;
