@@ -73,7 +73,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const cardImage = document.createElement('img');
     cardImage.classList.add('blog__card__image');
     cardImage.src = entry.image;
-    cardImage.alt = 'Blog Image';
+    cardImage.alt = '';
 
     const cardTitle = document.createElement('h2');
     cardTitle.classList.add('blog__card__title');
@@ -143,5 +143,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const isVisible = searchBar.style.display === 'inline';
     searchBar.style.display = isVisible ? 'none' : 'inline';
     searchButton.style.display = isVisible ? 'none' : 'inline';
+    searchIcon.style.display = isVisible ? 'inline' : 'none';
   }
 });
