@@ -269,16 +269,17 @@ h3.blog__card__subtitle {
 
 .search-bar {
     padding: 5px;
-    margin-left: 10px;
+    /* margin-left: 10px; */
     font-size: var(--font-size-body);
     border: 1px solid var(--primary-color);
     border-radius: 3px;
     display: none;
+    width: fit-content;
 }
 
 .footer__nav .search-button {
     padding: 5px 10px;
-    margin-left: 5px;
+    /* margin-left: 5px; */
     border: none;
     background-color: var(--accent-color-1);
     color: var(--background-color);
