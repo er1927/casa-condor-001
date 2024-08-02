@@ -9,6 +9,8 @@ document.addEventListener('DOMContentLoaded', () => {
   const searchIcon = document.getElementById('search-icon');
   const searchBar = document.getElementById('search-bar');
   const searchButton = document.getElementById('search-button');
+  const footerNav = document.querySelector('.footer__nav');
+  const allIcons = footerNav.querySelectorAll('button, i'); // Selects all buttons and icons within .footer__nav
 
   const blogCardsContainer = document.getElementById('blog-cards');
   const blogEntrySection = document.getElementById('blog-entry');
@@ -123,6 +125,24 @@ document.addEventListener('DOMContentLoaded', () => {
     displayBlogCards(results.length ? results : [{ title: 'No results found.', subtitle: '', image: '', content: '', tags: [], author: '' }]);
   }
 
+  function toggleSearchBar() {
+    const isVisible = searchBar.style.display === 'inline';
+    searchBar.style.display = isVisible ? 'none' : 'inline';
+    searchButton.style.display = isVisible ? 'none' : 'inline';
+    searchIcon.style.display = isVisible ? 'inline' : 'none';
+
+    // Show or hide all icons
+    allIcons.forEach(icon => {
+      icon.classList.toggle('hidden', !isVisible);
+    });
+
+    if (isVisible) {
+      document.removeEventListener('click', handleClickOutside);
+    } else {
+      document.addEventListener('click', handleClickOutside);
+    }
+  }
+
   searchIcon.addEventListener('click', (event) => {
     event.stopPropagation();
     toggleSearchBar();
@@ -139,13 +159,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  function toggleSearchBar() {
-    const isVisible = searchBar.style.display === 'inline';
-    searchBar.style.display = isVisible ? 'none' : 'inline';
-    searchButton.style.display = isVisible ? 'none' : 'inline';
-    searchIcon.style.display = isVisible ? 'inline' : 'none';
-  }
-
   // Function to handle clicks outside of the search bar
   function handleClickOutside(event) {
     if (!searchIcon.contains(event.target) &&
@@ -155,23 +168,12 @@ document.addEventListener('DOMContentLoaded', () => {
       searchBar.style.display = 'none';
       searchButton.style.display = 'none';
       searchIcon.style.display = 'inline';
+
+      // Show all icons
+      allIcons.forEach(icon => icon.classList.remove('hidden'));
     }
   }
 
-  // Add event listener for clicks outside the search elements
+  // Initial event listener setup
   document.addEventListener('click', handleClickOutside);
-
-  // Cleanup listener when search bar is toggled off
-  function toggleSearchBar() {
-    const isVisible = searchBar.style.display === 'inline';
-    searchBar.style.display = isVisible ? 'none' : 'inline';
-    searchButton.style.display = isVisible ? 'none' : 'inline';
-    searchIcon.style.display = isVisible ? 'inline' : 'none';
-
-    if (isVisible) {
-      document.removeEventListener('click', handleClickOutside);
-    } else {
-      document.addEventListener('click', handleClickOutside);
-    }
-  }
 });

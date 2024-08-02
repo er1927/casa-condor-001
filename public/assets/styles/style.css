@@ -288,6 +288,10 @@ h3.blog__card__subtitle {
     display: none; 
 }
 
+.hidden {
+    display: none;
+}
+
 /* .footer__nav__button_hide {
     display: inline-flex;
     align-items: center;
@@ -434,5 +438,8 @@ h3.blog__card__subtitle {
         top:0;
         bottom:auto;
         height: 100vh;
+    }
+    .hidden {
+        display: flex;
     }
 }
