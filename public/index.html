@@ -15,46 +15,47 @@
 </head>
 <body>
     <div class="wrap">
-       <header class="header">
-        <a href="index.html">
-            <div class="header__logo-and-title">
-                <div class="header__logo">
-                    <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" id="theme-image" class="header__logo" alt="Casa condor's logo, the silhouette of a condor spreading its wings in flight, in black, against an orange circle.">
+        <header class="header">
+            <a href="index.html">
+                <div class="header__logo-and-title">
+                    <div class="header__logo">
+                        <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" id="theme-image" class="header__logo" alt="Casa condor's logo, the silhouette of a condor spreading its wings in flight, in black, against an orange circle.">
+                    </div>
+                    <div class="header__title">
+                        <h1>Casa Condor</h1>
+                    </div>
                 </div>
-                <div class="header__title">
-                    <h1>Casa Condor</h1>
-                </div>
-            </div>
-        </a>
-        <button class="hamburger-icon">
-            &#9776;
-        </button>
-        <nav class="header__nav">
-            <ul>
-                <li><a href="index.html">home</a></li>
-                <li><a href="#blog">blog</a></li>
-                <li><a href="#about">about</a></li>
-                <li><a href="#contact">contact</a></li>
-            </ul>
-        </nav>
-    </header>    
-    <div class="header__tagline">
-        <p><a href="#about">Restoring a native ecosystem at the end of the world in the hopes of inspiring your own work.</a></p>
-    </div>
-    <main class="main" id="blog">
-        <div id="blog-cards" class="blog__cards"></div>
-        <div id="blog-entry" class="blog__entry" style="display: none;">
-            <button id="back-button" class="blog__entry__back-button">&#8962;
+            </a>
+            <button class="hamburger-icon">
+                &#9776;
             </button>
-            <h1 class="blog__entry__title" id="entry-title"></h1>
-            <h2 class="blog__entry__subtitle" id="entry-subtitle"></h2>
-            <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" class="blog__entry__image" id="entry-image" alt="Blog entry cover image">
-            <p class="blog__entry__content" id="entry-content"></p>
-            <p class="blog__entry__tags" id="entry-tags"></p>
-            <p class="blog__entry__author" id="entry-author"></p>
+            <nav class="header__nav">
+                <!-- 
+                <ul>
+                    <li><a href="index.html">home</a></li>
+                    <li><a href="#blog">blog</a></li>
+                    <li><a href="#about">about</a></li>
+                    <li><a href="#contact">contact</a></li>
+                </ul> 
+                -->
+            </nav>
+        </header>
+        <div class="header__tagline">
+            <p><a href="#about">Restoring a native ecosystem at the end of the world in the hopes of inspiring your own work.</a></p>
         </div>
-    </main>
-    <div class="about__container" id="about"> 
+        <main class="main" id="blog">
+            <div id="blog-cards" class="blog__cards"></div>
+            <div id="blog-entry" class="blog__entry" style="display: none;">
+                <button id="back-button" class="blog__entry__back-button">&#8962;</button>
+                <h1 class="blog__entry__title" id="entry-title"></h1>
+                <h2 class="blog__entry__subtitle" id="entry-subtitle"></h2>
+                <img src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==" class="blog__entry__image" id="entry-image" alt="Blog entry cover image">
+                <p class="blog__entry__content" id="entry-content"></p>
+                <p class="blog__entry__tags" id="entry-tags"></p>
+                <p class="blog__entry__author" id="entry-author"></p>
+            </div>
+        </main>
+        <div class="about__container" id="about"> 
             <div class="about">
                 <div class="about__text">
                     <h2>About</h2>
@@ -62,20 +63,20 @@
                     <br>The world is ending, what better way to spend our remaining time here than reclaiming our role as a keystone species and fostering the symbiotic relationships that keep each landscape alive?</p>
                 </div>
                 <!-- PROFILE IMAGE UPDATE NEEDED -->
-        </div>
-    </div>
-    <footer class="footer" id="contact">
-        <div class="footer__contact">
-            <h2>Contact</h2>
-            <p>casacondor [at] proton [dot] me</p>
-        </div>
-        <div class="copyright">
-            <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer">
-              <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="Creative Commons License" class="cc-icon">
-            </a>
             </div>
-    </footer>
-   </div>
+        </div>
+        <footer class="footer" id="contact">
+            <div class="footer__contact">
+                <h2>Contact</h2>
+                <p>casacondor [at] proton [dot] me</p>
+            </div>
+            <div class="copyright">
+                <a href="https://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank" rel="license noopener noreferrer">
+                    <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="Creative Commons License" class="cc-icon">
+                </a>
+            </div>
+        </footer>
+    </div>
     <nav class="footer__nav">
         <button class="header__toggle-button" id="toggle-theme">
             <span id="sun-icon" style="display: none;"><i class="fa-solid fa-sun"></i></span>
