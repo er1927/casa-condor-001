@@ -71,16 +71,16 @@ document.addEventListener('DOMContentLoaded', () => {
     card.addEventListener('click', () => displayEntry(entry));
 
     const cardImage = document.createElement('img');
-    cardImage.classList.add('blog__card__image');
+    card.classList.add('blog__card__image');
     cardImage.src = entry.image;
     cardImage.alt = '';
 
     const cardTitle = document.createElement('h2');
-    cardTitle.classList.add('blog__card__title');
+    card.classList.add('blog__card__title');
     cardTitle.textContent = entry.title;
 
     const cardSubtitle = document.createElement('h3');
-    cardSubtitle.classList.add('blog__card__subtitle');
+    card.classList.add('blog__card__subtitle');
     cardSubtitle.textContent = entry.subtitle;
 
     card.appendChild(cardImage);
@@ -144,5 +144,34 @@ document.addEventListener('DOMContentLoaded', () => {
     searchBar.style.display = isVisible ? 'none' : 'inline';
     searchButton.style.display = isVisible ? 'none' : 'inline';
     searchIcon.style.display = isVisible ? 'inline' : 'none';
+  }
+
+  // Function to handle clicks outside of the search bar
+  function handleClickOutside(event) {
+    if (!searchIcon.contains(event.target) &&
+        !searchBar.contains(event.target) &&
+        !searchButton.contains(event.target)) {
+      // Hide search elements and show the search icon
+      searchBar.style.display = 'none';
+      searchButton.style.display = 'none';
+      searchIcon.style.display = 'inline';
+    }
+  }
+
+  // Add event listener for clicks outside the search elements
+  document.addEventListener('click', handleClickOutside);
+
+  // Cleanup listener when search bar is toggled off
+  function toggleSearchBar() {
+    const isVisible = searchBar.style.display === 'inline';
+    searchBar.style.display = isVisible ? 'none' : 'inline';
+    searchButton.style.display = isVisible ? 'none' : 'inline';
+    searchIcon.style.display = isVisible ? 'inline' : 'none';
+
+    if (isVisible) {
+      document.removeEventListener('click', handleClickOutside);
+    } else {
+      document.addEventListener('click', handleClickOutside);
+    }
   }
 });
