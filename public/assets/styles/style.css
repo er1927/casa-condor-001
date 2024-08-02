@@ -293,6 +293,15 @@ h3.blog__card__subtitle {
     align-items: center;
 }
 
+.footer__contact__social {
+    display: flex;
+    gap:30px;
+}
+
+.footer__contact__social i {
+    font-size: var(--font-size-body);
+}
+
 .copyright {
     align-self:center;
 }
