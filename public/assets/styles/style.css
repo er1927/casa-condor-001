@@ -40,6 +40,13 @@ body {
     padding: 0;
     width:100%;
     overflow-x:hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.wrap {
+    display: flex;
+    flex-direction: column;
 }
 
 a {
@@ -296,7 +303,9 @@ h3.blog__card__subtitle {
 
 /* Media Queries */
 @media only screen and (min-width: 768px) {
-
+    body {
+        flex-direction: row;
+    }
     .header__nav {
         display: none;
         text-align: right;
@@ -391,11 +400,12 @@ h3.blog__card__subtitle {
         flex-direction: row;
     }
 
-    .footer__nav {
+
+    /* .footer__nav {
         justify-content: space-around;
     }
 
     .footer__nav__button_hide {
         display: none;
-    }
+    } */
 }
